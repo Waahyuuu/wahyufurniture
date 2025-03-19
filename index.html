@@ -25,6 +25,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- email library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
     <!-- header section -->
@@ -56,7 +59,7 @@
       <a href="index.html">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="Products.html">Products</a>
+      <a href="products.html">Products</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -71,7 +74,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
               soluta hic reprehenderit nisi libero?
             </p>
-            <a href="Products.html" class="btn">Lihat Produk</a>
+            <a href="products.html" class="btn">Lihat Produk</a>
           </div>
           <div class="image">
             <img src="image/slide/Gambar1.png" alt="" />
@@ -86,7 +89,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
               soluta hic reprehenderit nisi libero?
             </p>
-            <a href="Products.html" class="btn">Lihat Produk</a>
+            <a href="products.html" class="btn">Lihat Produk</a>
           </div>
           <div class="image">
             <img src="image/slide/Gambar2.png" alt="" />
@@ -101,7 +104,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
               soluta hic reprehenderit nisi libero?
             </p>
-            <a href="Products.html" class="btn">Lihat Produk</a>
+            <a href="products.html" class="btn">Lihat Produk</a>
           </div>
           <div class="image">
             <img src="image/slide/Gambar3.png" height="554.11px" alt="" />
@@ -113,68 +116,51 @@
       <div id="slide-prev" onclick="prev()" class="ri-arrow-left-line"></div>
     </section>
 
-    <br id="about" />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <br id="about" >
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- about section -->
 
-    <h1 class="title-home"><span>About</span></h1>
+    <h1 class="title-home"> <span>About</span> </h1>
 
     <section class="about">
-      <div class="image">
-        <img
-          src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg"
-          alt=""
-        />
-      </div>
+        <div class="image">
+          <img src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg" alt="" />
+        </div>
 
-      <div class="content">
-        <span>Welcome to WahyuFurniture</span>
-        <h3>Siap Melayani Keluhan Furniture Anda</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
-          soluta hic reprehenderit nisi libero? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. A tempore soluta hic reprehenderit nisi
-          libero?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
-          cupiditate, ut maxime voluptatibus voluptate veritatis quisquam error
-          neque architecto recusandae temporibus, aspernatur nulla itaque est
-          eaque rerum a quos nisi?
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius commodi
-          nam tempora facilis. Totam dolor perspiciatis expedita debitis.
-          Aliquid facere amet, esse eos illum nulla molestias quos inventore
-          ipsa similique?
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius commodi
-          nam tempora facilis. Totam dolor perspiciatis expedita debitis.
-          Aliquid facere amet, esse eos illum nulla molestias quos inventore
-          ipsa similique?
-        </p>
-        <a href="#" class="btn">Baca Selengkapnya</a>
-      </div>
+        <div class="content">
+          <span>Welcome to WahyuFurniture</span>
+          <h3>Siap Melayani Keluhan Furniture Anda</h3>
+          <p class="short-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A tempore soluta hic reprehenderit nisi libero?
+          </p>
+          <p class="full-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A tempore soluta hic reprehenderit nisi libero? 
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. A tempore soluta hic reprehenderit nisi libero?
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iure cupiditate, ut maxime voluptatibus.
+          </p>
+          <button class="read-more-btn">Baca Selengkapnya >></button>
+        </div>
     </section>
 
-    <br id="services" />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <br id="services">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- services section -->
-    <h1 class="title-home">
-      <span>Services</span> <a href="#">Selengkapnya >></a>
-    </h1>
+    <h1 class="title-home"> <span>Services</span> </h1>
 
     <section class="services">
       <div class="box-container">
+        
         <div class="box">
-          <img src="image/category/armchair (1).png" alt="" />
+          <img src="image/category/armchair (1).png" alt="">
           <h3>Free Shipping</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
@@ -184,7 +170,7 @@
         </div>
 
         <div class="box">
-          <img src="image/category/armchair (1).png" alt="" />
+          <img src="image/category/armchair (1).png" alt="">
           <h3>Free Shipping</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
@@ -194,7 +180,7 @@
         </div>
 
         <div class="box">
-          <img src="image/category/armchair (1).png" alt="" />
+          <img src="image/category/armchair (1).png" alt="">
           <h3>Free Shipping</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
@@ -225,26 +211,23 @@
         loading="lazy">
       </iframe>
 
-      <form action="#" class="contact-form">
-        <h3>get in touch</h3>
+      <form onsubmit="sendEmail(event)" class="contact-form">
+        <h3>Get in Touch</h3>
         <span>Name</span>
-        <input type="text" placeholder="Nama Anda" class="box" />
+        <input type="text" name="name" placeholder="Nama Anda" class="box" required />
         <span>Email</span>
-        <input type="email" placeholder="Email Anda" class="box" />
+        <input type="email" name="email" placeholder="Email Anda" class="box" required />
+        <span>No WhatsApp</span>
+        <input type="tel" name="notel" placeholder="No WhatsApp Anda" class="box" required />
         <span>Pesan</span>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Pesan Anda"
-          class="box"
-        ></textarea>
+        <textarea name="message" placeholder="Pesan Anda" class="box" required></textarea>
         <button type="submit" class="btn">Kirim</button>
       </form>
+      
 
       <!-- <div id="call-btn" class="bi bi-telephone-fill"></div> -->
     </section>
+
 
     <!-- footer section -->
     <section class="footer">
@@ -252,8 +235,7 @@
         <div class="box">
           <h3>Tentang Kami</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
-            soluta hic reprehenderit nisi libero?
+            WahyuFurniture adalah perusahaan jasa yang bergerak di bidang furniture, memberikan jasa reparasi maupun berbagai macam produk baru seperti sofa, kursi, dan meja.
           </p>
         </div>
 
@@ -262,9 +244,7 @@
           <a href="index.html"> <i class="ri-arrow-right-line"></i> Home </a>
           <a href="#about"> <i class="ri-arrow-right-line"></i> About </a>
           <a href="#services"> <i class="ri-arrow-right-line"></i> Services </a>
-          <a href="Products.html">
-            <i class="ri-arrow-right-line"></i> Products</a
-          >
+          <a href="products.html"> <i class="ri-arrow-right-line"></i> Products</a>
           <a href="#contact"> <i class="ri-arrow-right-line"></i> Contact </a>
         </div>
 
@@ -276,16 +256,11 @@
           <a href="#"> <i class="bi bi-envelope-fill"></i> Email </a>
         </div>
       </div>
-
-      <!-- <div class="credit">
-                <p>Created By <a href="#">WahyuFurniture</a> | All Rights Reserved</p>
-            </div> -->
     </section>
 
     <section class="credit">
       <p>
-        © 2025 <a href="https://portowahyu.framer.website/">WahyuFurniture</a> |
-        All Rights Reserved
+        © 2025 <a href="https://portowahyu.framer.website/">WahyuFurniture</a> | All Rights Reserved
       </p>
     </section>
 

@@ -637,6 +637,27 @@ section {
     line-height: 2;
 }
 
+.full-text {
+    display: none;
+}
+
+.about .content .read-more-btn {
+    display: block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #b58d7e, #845f51);
+    color: #faf7f6;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.about .content .read-more-btn:hover{
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #945f51, #b58d7e);
+}
+
 /* bagian services */
 .services .box-container {
     display: -ms-grid;
@@ -737,6 +758,53 @@ section {
     border-radius: 3rem;
 }
 
+.contact-form .btn {
+    font-size: 16px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 140px;
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(to right, #a87e6f, #7d5b4b);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form .btn:active {
+    transform: scale(0.98);
+}
+
+.contact-form .btn:hover {
+    background: linear-gradient(to right, #8f695a, #654538);
+}
+
+.contact-form .btn .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.contact-form .btn:disabled {
+    background: #a87e6f88; /* Warna tombol saat disabled */
+    cursor: not-allowed;
+}
+
+
 /* bagian footer */
 .footer {
     margin: 2%;
@@ -825,20 +893,54 @@ section {
     #search-btn {
         display: inline-block;
     }
-    html {
-        font-size: 50%;
-    }
     .header .search-form {
         position: absolute;
         height: 8rem;
         top: -101%;
         left: 2%;
         right: 2.2%;
-        /* width: 100%; */
-        border-radius: 3rem 3rem 0.75rem 0.75rem;
+        width: 96%;
+        border-radius: 3rem;
         background: #ece0dc;
     }
     .header .search-form.active {
         top: 110%;
     }
-}     
+}   
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .home .slides-container .slide .content h3 {
+        font-size: 4rem;
+    }
+    .heading {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        gap: 1rem;
+    }
+    .header .nav-icons i {
+        font-size: 18px;
+        gap: 12px;
+    }
+    .header .logo img {
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header {
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+    .header .logo img {
+        height: 50px;
+    }
+    .header .nav-icons i {
+        font-size: 18px;
+        gap: 10px;
+    }
+}
